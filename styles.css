@@ -1,0 +1,440 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #dff3f4;
+}
+
+/* Common */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ================= HEADER ================= */
+.header {
+  background-color: #004f8a;
+  padding: 16px 0;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 200px;
+  height: 70px;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 14px;
+  font-weight: 500;
+}
+
+.btn-contact {
+  background-color: #ffffff;
+  color: #004f8a;
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* ================= HERO ================= */
+.hero {
+  padding: 50px 0;
+}
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #004f8a;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 30px;
+  max-width: 520px;
+}
+
+.btn-hero {
+  background-color: #004f8a;
+  color: #ffffff;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero-image {
+  flex: 1;
+  height: 360px;
+  background-color: #cfe9ea;
+  border-radius: 12px;
+}
+
+/* ================= SERVICES ================= */
+.services {
+  padding: 90px 0;
+  background-color: #ffffff;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  color: #004f8a;
+  margin-bottom: 60px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.service-card {
+  background-color: #dff3f4;
+  border-radius: 14px;
+  padding: 24px;
+  text-align: center;
+}
+
+.service-image {
+  width: 100%;
+  height: 200px;
+  background-color: #cfe9ea;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  color: #004f8a;
+  margin-bottom: 12px;
+}
+
+.service-card p {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.service-btn {
+  background-color: #004f8a;
+  color: #ffffff;
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* ================= WHY ASSIGNPRO ================= */
+.why-assignpro {
+  background-color: #ffffff;
+  padding: 100px 0;
+}
+
+.why-inner {
+  display: flex;
+  gap: 60px;
+}
+
+.why-left h2 {
+  font-size: 36px;
+  color: #004f8a;
+  margin-bottom: 30px;
+}
+
+.why-btn {
+  background-color: #004f8a;
+  color: #ffffff;
+  padding: 12px 26px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.why-right {
+  flex: 1.5;
+}
+
+.why-list {
+  list-style: none;
+}
+
+.why-list li {
+  padding-left: 30px;
+  margin-bottom: 18px;
+  position: relative;
+}
+
+.why-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #004f8a;
+  font-weight: 700;
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+  background-color: #004f8a;
+  color: #ffffff;
+  padding: 60px 0 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-col h3,
+.footer-col h4 {
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.footer-col p {
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #dff3f4;
+}
+
+.footer-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 18px;
+  background-color: #dff3f4;
+  color: #004f8a;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.footer-btn:hover {
+  background-color: #ffffff;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 15px;
+  font-size: 13px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 992px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+  .logo {
+    width: 130px;
+    height: 50px;
+  }
+  .hero {
+    padding: 27px 0;
+  }
+  .hero-inner,
+  .why-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
+  .services {
+    padding: 36px 0;
+    background-color: #ffffff;
+  }
+  .why-assignpro {
+    background-color: #ffffff;
+    padding: 40px 0;
+  }
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.page-content {
+  padding: 90px 0;
+}
+
+.page-content h1 {
+  font-size: 38px;
+  color: #004f8a;
+  margin-bottom: 30px;
+}
+
+.page-content p {
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* ================= ASSIGNMENT PAGE ================= */
+
+.page-content {
+  padding: 90px 0;
+}
+
+.page-content h1 {
+  font-size: 40px;
+  color: #004f8a;
+  margin-bottom: 30px;
+}
+
+.page-content h2 {
+  font-size: 28px;
+  color: #004f8a;
+  margin: 50px 0 20px;
+}
+
+.page-content p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #333;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.lead-text {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.technique-list {
+  margin-left: 20px;
+}
+
+.technique-list li {
+  margin-bottom: 18px;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+.cta-center {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.page-content {
+  padding: 90px 0;
+}
+
+.page-content h1 {
+  font-size: 40px;
+  color: #004f8a;
+  margin-bottom: 30px;
+}
+
+.page-content h2 {
+  font-size: 28px;
+  color: #004f8a;
+  margin: 50px 0 20px;
+}
+
+.page-content p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #333;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.lead-text {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.technique-list {
+  margin-left: 20px;
+}
+
+.technique-list li {
+  margin-bottom: 18px;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+.cta-center {
+  text-align: center;
+  margin: 40px 0;
+}
+@media (max-width: 768px) {
+  .page-content {
+    padding: 40px 0;
+  }
+  .btn-hero {
+    background-color: #004f8a;
+    color: #ffffff;
+    padding: 10px 8px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+  }
+}
+.btn-ex {
+  background-color: white;
+  color: black;
+}
